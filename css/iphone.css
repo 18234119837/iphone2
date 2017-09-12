@@ -1,0 +1,416 @@
+/*头部开始*/
+header{
+    width: 100%;
+    height: 40px;
+    background:#444;
+}
+main{
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+.head-txt{
+    float: right;
+    line-height: 40px;
+    color: #a8a8aa;
+    font-size: 12px;
+}
+/*头部结束*/
+nav{
+    width: 100%;
+    height: 44px;
+    background: black;
+}
+nav main{
+    /*background: gray;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+text-align: justify;
+    /*设置的是文本两端对齐*/
+}
+/*解决text-algin问题*/
+nav main:after{
+    content: "";
+    /*设置为行内块儿元素*/
+    display: inline-block;
+    width:100%;
+    font-size: 0;
+    line-height: 0;
+}
+nav main a{
+    color: #fff;
+    font-size: 14px;
+    line-height: 44px;
+    display: inline-block;
+}
+nav main a:hover,.nav-icon:hover{
+    color:lightgrey;
+}
+.nav-big a span.nav-icon{
+    color: white;
+    font-size:20px;
+}
+
+
+
+/*banner开始*/
+.banner{
+    width: 100%;
+    height: 500px;
+    background: yellow;
+    position: relative;
+}
+.banner-txt{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height: 217px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    /*font-weight: 500;*/
+}
+.banner-txt h1{
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+.banner .banner-txt h1:nth-child(2){
+    font-size:48px ;
+    text-indent: 40px;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+    background: url("../img/sgouji.3.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+/*banner结束*/
+/*图片列表开始*/
+.img-list{
+    width: 100%;
+    height: auto;
+    background: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    /*overflow: hidden;*/
+}
+.img-list li{
+    width: 25%;
+    height: 268px;
+    border: 2px solid white;
+    border-left: 0;
+    padding-top: 30px;
+    text-align: center;
+}
+.img-list li:nth-child(1){
+    background: url("../img/360-small.jpg");
+    background-size: cover;
+    background-position: center;
+}
+ h4{
+    font-size: 19px;
+    color: #111;
+    font-weight: 500;
+    letter-spacing: .018em;
+}
+h5{
+    font-size: 17px;
+    color: #333;
+    font-weight: 400;
+}
+.img-list li:nth-child(2) h5{
+    font-size: 12px;
+    color: #333;
+    font-weight: 400;
+}
+.img-list li:nth-child(2){
+    background: url("../img/360-small2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.img-list li:nth-child(3){
+    background: url("../img/360-small.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.img-list li:nth-child(4){
+    background: url("../img/360-small2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-right: 0;
+}
+/*图片列表结束*/
+/*底部开始*/
+footer{
+    width: 100%;
+    height:auto;
+    background: #F2F2F2;
+ }
+  .foot-box{
+       max-width: 1024px;
+      height:auto;
+       margin: 0 auto;
+      padding:0 22px;
+  }
+.foot-top{
+    width: 100%;
+    height: auto;
+    padding:14px 0 14px;
+    border-bottom: 1px solid #D6D6D6;
+}
+.foot-top span{
+    font-size: 12px;
+    line-height: 22px;
+    color: #888;
+}
+/*底部列表开始*/
+.foot-list{
+    width:100%;
+    height: 286px;
+    /*background: #97ee9d;*/
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.foot-list div{
+    max-width: 176px;
+    height: auto;
+    margin-right: 20px;
+}
+.foot-list div ul li{
+    line-height: 15px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: #333;
+}
+h3{
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.add-margin{
+    margin-top: 20px;
+}
+/*底部结束*/
+/*底部小屏开始*/
+.foot-list-small{
+    max-width: 717px;
+    height: 294px;
+    padding-top: 21px;
+    display: none;
+}
+.foot-list-small li{
+    width: 100%;
+    height: 38px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #D6D6D6;
+}
+.foot-list-small li span{
+    float: right;
+    display: none;
+}
+/*底部小屏结束*/
+/*底部信息开始*/
+.foot-message{
+    max-width: 980px;
+    height:auto;
+}
+.foot-message>li:nth-child(1){
+    width:100%;
+    /*height: 23px;*/
+    height: auto;
+    margin-bottom: 7px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d6d6d6;
+    color: #888;
+    font-size: 12px;
+}
+.foot-message>li:nth-child(1) span{
+    color: #0070c9;
+}
+.foot-message:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.foot-message>li:nth-child(2){
+    width:290px;
+    float: left;
+    font-size: 12px;
+    margin-right: 30px;
+    color: #888;
+    line-height: 21px;
+}
+
+.foot-message>li:nth-child(3) a{
+    font-size: 12px;
+    float: left;
+    border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+    color: #555;
+}
+.foot-message>li:nth-child(3) a.del-rline{
+    border-right:0;
+}
+.foot-message>li:nth-child(4){
+    width:100%;
+    margin-bottom: 20px;
+    color: #999;
+    font-size: 12px;
+    float: left;
+    margin-top: 4px;
+}
+/*底部信息结束*/
+/*屏幕小于1024的时候*/
+@media screen and (max-width: 1024px) {
+    main{
+        padding-right: 24px;
+    }
+    nav main{
+        padding-left: 24px;
+    }
+    /*banner开始*/
+    .banner{
+        height: 500px;
+    }
+    .banner-img{
+        background: url("../img/shouji.2.jpg");
+    }
+    .banner-txt{
+        height: 211px;
+    }
+    .banner-txt h1{
+        font-size: 28px;
+    }
+    .banner .banner-txt h1:nth-child(2){
+        font-size: 40px;
+    }
+    .img-list li:nth-child(1){
+        background: url("../img/640-pc1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .img-list li:nth-child(2){
+        background: url("../img/640-pc2.jpg");
+         background-size: cover;
+         background-position: center;
+        border-right: 0;
+    }
+    .img-list li:nth-child(3){
+       background: url("../img/640-pc1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .img-list li:nth-child(4){
+        background: url("../img/640-pc2.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+        .img-list li{
+            width: 50%;
+            background-size: cover;
+            background-position: center;
+    }
+      .foot-box {
+          width: 100%;
+      }
+    .foot-message{
+        width: 100%;
+    }
+    .foot-list{
+        width: 100%;
+    }
+    .foot-list-small{
+        display: none;
+    }
+}
+/*屏幕大于767*/
+@media screen and (min-width:767px) {
+    .nav-big{
+        display: block;
+    }.nav-small{
+        display: none;
+    }
+     .banner{
+         height:460px;
+     }
+}
+/*屏幕小于767*/
+@media screen and (max-width:767px) {
+    .nav-big{
+        display:none;
+    }.nav-small{
+        display:block;
+    }
+/*banner开始*/
+    .banner{
+        height:380px;
+    }
+    .banner-img{
+        background: url("../img/shouji.1.jpg") ;
+    }
+    .banner-txt{
+        height: 211px;
+    }
+    .banner-txt h1{
+        font-size:22px;
+     }
+    .banner .banner-txt h1:nth-child(2){
+        font-size:31px;
+    }
+    .img-list li{
+        width: 100%;
+         border-right: 0;
+    }
+   .img-list li:nth-child(1){
+       background: url("../img/640-pc1.jpg");
+       background-size: cover;
+       background-position: center;
+   }
+   .img-list li:nth-child(2){
+       background: url("../img/640-pc2.jpg");
+        background-size: cover;
+        background-position: center;
+   }
+   .img-list li:nth-child(3){
+      background: url("../img/640-pc1.jpg");  ;
+       background-size: cover;
+       background-position: center;
+   }
+   .img-list li:nth-child(4){
+       background: url("../img/640-pc2.jpg");
+        background-size: cover;
+        background-position: center;
+   }
+   .foot-list-small{
+       display: block;
+   }
+   .foot-list{
+       display: none;
+   }
+    .foot-list-small li span{
+        display: block;
+    }
+    .foot-message>li:nth-child(1) {
+        border-bottom: 0;
+    }
+    .foot-message>li:nth-child(2){
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    .foot-message>li:nth-child(4){
+        width: 100%;
+    }
+    .foot-message>li:nth-child(3) {
+        width: 100%;
+    }
+}
