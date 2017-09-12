@@ -52,6 +52,10 @@ nav main a:hover,.nav-icon:hover{
     color: white;
     font-size:20px;
 }
+.nav-small a span.nav-icon{
+    color: white;
+    font-size:20px;
+}
 
 
 
