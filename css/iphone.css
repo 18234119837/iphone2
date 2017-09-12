@@ -59,7 +59,7 @@ nav main a:hover,.nav-icon:hover{
 .banner{
     width: 100%;
     height: 500px;
-    background: yellow;
+    /*background: yellow;*/
     position: relative;
 }
 .banner-txt{
@@ -95,7 +95,7 @@ nav main a:hover,.nav-icon:hover{
 .img-list{
     width: 100%;
     height: auto;
-    background: yellow;
+    /*background: yellow;*/
     display: flex;
     flex-wrap: wrap;
     /*overflow: hidden;*/
